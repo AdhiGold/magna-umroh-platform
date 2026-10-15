@@ -1,10 +1,10 @@
-# MAGNA UMROH — GitHub Source v1.1
+# MAGNA UMROH — GitHub Source v1.3
 
 Prototype frontend for **MAGNA UMROH**, an Umrah Travel Management Platform. This version updates the public landing page, login demo, admin dashboard, and Core / Travel Partner / POS-Cashier / AI modules using the visual direction from the supplied **Palmeera Lounge v2.0** PDF.
 
 ## Branding
 - Product name remains **MAGNA UMROH**.
-- Uses the supplied MAGNA TOURS logo at `assets/magna-tours-logo.jpeg`.
+- Uses the supplied MAGNA TOURS logo at `assets/makna-tour-golden-ribbon.png`.
 - Visual direction: forest green, warm gold accents, white/light-gray operational workspace, dark-green sidebar, card-based dashboard and data tables.
 
 ## Modules included
@@ -57,4 +57,15 @@ Adapted from the supplied `Palmeera mockup v2.0` PDF:
 The implementation is a visual adaptation for MAGNA UMROH, not a pixel-identical reproduction of the original lounge UI.
 
 ## Version
-`v1.1` — UI alignment and logo update.
+`v1.3` — UI alignment and logo update.
+
+
+## Perubahan v1.3
+- Branding logo diganti ke Makna Tour Golden Ribbon; nama produk tetap MAGNA UMROH.
+- Login demo menyediakan pemilihan workspace Core Platform, Travel Partner, atau POS/Cashier.
+- Navigasi disesuaikan per workspace agar area kerja terpisah di sisi UI.
+- MAGNA AI tersedia sebagai panel kontekstual di setiap workspace melalui tombol Ask MAGNA AI.
+- Ini tetap prototype frontend: autentikasi, pembatasan akses, data, dan AI belum diamankan oleh backend. Jangan gunakan untuk transaksi atau data jamaah nyata.
+
+## Upload pembaruan ke repository
+Unggah isi folder versi ini ke repository yang sama, pilih Replace files bila diminta, lalu commit. File logo baru ada di `assets/makna-tour-golden-ribbon.png`.
