@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#174c3b">
   <meta name="description" content="MAGNA UMROH — Umrah Travel Management Platform">
   <title>MAGNA UMROH | Travel Management Platform</title>
-  <link rel="icon" href="assets/magna-tours-logo.jpeg">
+  <link rel="icon" href="assets/makna-tour-golden-ribbon.png">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -14,7 +14,7 @@
     <div class="login-backdrop"></div>
     <header class="public-nav">
       <a class="public-brand" href="#" aria-label="MAGNA UMROH">
-        <img src="assets/magna-tours-logo.jpeg" alt="MAGNA TOURS logo">
+        <img src="assets/makna-tour-golden-ribbon.png" alt="MAGNA TOURS logo">
         <span><b>MAGNA UMROH</b><small>TRAVEL MANAGEMENT PLATFORM</small></span>
       </a>
       <div class="public-links"><a href="#features">Platform</a><a href="#features">Layanan</a><button class="btn btn-gold" id="show-login">Login</button></div>
@@ -30,7 +30,7 @@
       <div class="hero-art">
         <div class="art-glow"></div>
         <div class="arch arch-one"></div><div class="arch arch-two"></div>
-        <div class="hero-logo-card"><img src="assets/magna-tours-logo.jpeg" alt="Logo MAGNA TOURS"><div class="gold-line"></div><strong>MAGNA UMROH</strong><small>TRAVEL MANAGEMENT PLATFORM</small></div>
+        <div class="hero-logo-card"><img src="assets/makna-tour-golden-ribbon.png" alt="Logo MAGNA TOURS"><div class="gold-line"></div><strong>MAGNA UMROH</strong><small>TRAVEL MANAGEMENT PLATFORM</small></div>
         <div class="floating-chip chip-top"><span class="chip-icon">✦</span><span><b>MAGNA AI</b><small>Operational assistant</small></span></div>
         <div class="floating-chip chip-bottom"><span class="chip-icon">✓</span><span><b>One connected platform</b><small>Core · Travel · POS</small></span></div>
       </div>
@@ -44,14 +44,19 @@
     <div class="login-modal hidden" id="login-modal" role="dialog" aria-modal="true" aria-labelledby="login-title">
       <div class="login-card">
         <button class="modal-close" id="close-login" aria-label="Tutup">×</button>
-        <img class="login-logo" src="assets/magna-tours-logo.jpeg" alt="MAGNA TOURS">
-        <span class="eyebrow">WELCOME BACK</span><h2 id="login-title">Sign in to MAGNA</h2>
-        <p class="muted">Masuk ke workspace demo untuk menjelajahi prototype.</p>
+        <img class="login-logo" src="assets/makna-tour-golden-ribbon.png" alt="Makna Tour logo">
+        <span class="eyebrow">SECURE WORKSPACE ENTRY · DEMO</span><h2 id="login-title">Masuk ke MAGNA UMROH</h2>
+        <p class="muted">Pilih workspace yang ingin dibuka. Setiap modul memiliki jalur masuk dan navigasi tersendiri.</p>
         <form id="login-form">
+          <fieldset class="module-picker"><legend>Pilih modul</legend>
+            <label class="module-choice"><input type="radio" name="module" value="core" checked><span class="module-choice-icon">◈</span><span><b>Core Platform</b><small>Administrator platform & partner</small></span></label>
+            <label class="module-choice"><input type="radio" name="module" value="travel"><span class="module-choice-icon">✈</span><span><b>Travel Partner</b><small>Jamaah, paket, reservasi & invoice</small></span></label>
+            <label class="module-choice"><input type="radio" name="module" value="pos"><span class="module-choice-icon">▧</span><span><b>POS / Cashier</b><small>Counter, validasi & pembayaran</small></span></label>
+          </fieldset>
           <label>Email<input type="email" id="login-email" placeholder="admin@magnaumroh.id" required></label>
           <label>Password<input type="password" id="login-password" placeholder="Masukkan password demo" required></label>
-          <div class="login-hint">Mode prototype: gunakan email dan password apa pun yang valid.</div>
-          <button class="btn btn-green full" type="submit">Sign in <span>→</span></button>
+          <div class="login-hint">Prototype saja: kredensial belum divalidasi oleh backend. Jangan gunakan data atau password asli.</div>
+          <button class="btn btn-green full" type="submit">Masuk ke workspace <span>→</span></button>
         </form>
       </div>
     </div>
@@ -60,7 +65,7 @@
   <div id="app-shell" class="app-shell hidden">
     <aside class="sidebar" id="sidebar">
       <div class="sidebar-brand">
-        <img src="assets/magna-tours-logo.jpeg" alt="MAGNA TOURS logo">
+        <img src="assets/makna-tour-golden-ribbon.png" alt="MAGNA TOURS logo">
         <div><b>MAGNA</b><small>UMROH PLATFORM</small></div>
         <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Toggle menu">☰</button>
       </div>
@@ -74,8 +79,7 @@
       <button class="nav" data-view="pilgrims"><span class="nav-icon">♙</span><span>Data Jamaah</span></button>
       <button class="nav" data-view="reservations"><span class="nav-icon">▣</span><span>Reservasi & Invoice</span></button>
       <button class="nav" data-view="pos"><span class="nav-icon">▧</span><span>POS / Cashier</span></button>
-      <div class="nav-section">INTELLIGENCE</div>
-      <button class="nav" data-view="ai"><span class="nav-icon">✦</span><span>MAGNA AI Assistant</span><span class="nav-new">AI</span></button>
+      <div class="nav-section">INSIGHTS</div>
       <button class="nav" data-view="reports"><span class="nav-icon">▥</span><span>Reports</span></button>
       <div class="sidebar-bottom"><span class="online-dot"></span><span>Demo environment</span><small>Prototype v1.1</small><button id="logout" class="logout">↪ Sign out</button></div>
     </aside>
@@ -86,11 +90,17 @@
         <div class="topbar-right"><span class="env-badge"><i></i> INTERACTIVE DEMO</span><button class="icon-button" title="Notifications">♧<sup>2</sup></button><div class="user-menu"><div class="user-avatar">SA</div><div><b id="user-name">Super Admin</b><small>Platform Administrator</small></div><span>⌄</span></div></div>
       </header>
       <div class="content-wrap">
-        <div class="page-heading"><div><h2 id="page-title">Platform overview</h2><p id="page-description">Pantau aktivitas dan performa ekosistem MAGNA UMROH.</p></div><div class="heading-actions"><span class="date-pill">◷ <span id="current-date"></span></span><button class="btn btn-green" data-view="ai">✦ Ask MAGNA AI</button></div></div>
+        <div class="page-heading"><div><h2 id="page-title">Platform overview</h2><p id="page-description">Pantau aktivitas dan performa ekosistem MAGNA UMROH.</p></div><div class="heading-actions"><span class="date-pill">◷ <span id="current-date"></span></span><button class="btn btn-green" id="open-module-ai">✦ Ask MAGNA AI</button></div></div>
         <div id="content" aria-live="polite"></div>
         <footer class="app-footer"><span>© 2026 MAGNA UMROH · Travel Management Platform</span><span><i class="online-dot"></i> Prototype · Data simulasi</span></footer>
       </div>
     </main>
+  </div>
+  <div id="module-ai-widget" class="module-ai-widget hidden" aria-live="polite">
+    <div class="module-ai-head"><div><b>✦ MAGNA AI</b><small id="module-ai-context">Asisten workspace</small></div><button type="button" id="close-module-ai" aria-label="Tutup AI">×</button></div>
+    <div id="module-ai-messages" class="module-ai-messages"><div class="bubble ai"><strong>MAGNA AI · Demo</strong>Halo! Saya siap membantu dalam workspace ini. Tanyakan ringkasan atau bantuan operasional.</div></div>
+    <form id="module-ai-form" class="module-ai-form"><input id="module-ai-input" autocomplete="off" placeholder="Tanyakan sesuatu..." required><button class="btn btn-green" type="submit">Kirim</button></form>
+    <small class="module-ai-note">Respons simulasi lokal; belum terhubung ke LLM atau database produksi.</small>
   </div>
   <div id="toast" class="toast" role="status"></div>
   <script src="js/app.js"></script>
